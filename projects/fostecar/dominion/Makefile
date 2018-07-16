@@ -33,7 +33,14 @@ runtests: testDrawCard
 player: player.c interface.o
 	gcc -o player player.c -g  dominion.o rngs.o interface.o $(CFLAGS)
 
+testGetCost: unittest1.c dominion.o rngs.o
+	gcc -o testGetCost unittest1.c -g dominion.o rngs.o $(CFLAGS)
+
+testFullDeckCount: unittest2.c dominion.o rngs.o
+	gcc -o testFullDeckCount unittest2.c -g dominion.o rngs.o $(CFLAGS)
+
+
 all: playdom player 
 
 clean:
-	rm -f *.o playdom.exe playdom player player.exe  *.gcov *.gcda *.gcno *.so *.out testDrawCard testDrawCard.exe
+	rm -f *.o playdom.exe playdom player player.exe  *.gcov *.gcda *.gcno *.so *.out testDrawCard testDrawCard.exe unittest1 unittest1.exe unittest2 unitest2.exe
