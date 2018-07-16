@@ -39,8 +39,11 @@ testGetCost: unittest1.c dominion.o rngs.o
 testFullDeckCount: unittest2.c dominion.o rngs.o
 	gcc -o testFullDeckCount unittest2.c -g dominion.o rngs.o $(CFLAGS)
 
+testKingdomCards: unittest3.c dominion.o rngs.o
+	gcc -o testKingdomCards unittest3.c -g dominion.o rngs.o $(CFLAGS)
+
 
 all: playdom player 
 
 clean:
-	rm -f *.o playdom.exe playdom player player.exe  *.gcov *.gcda *.gcno *.so *.out testDrawCard testDrawCard.exe unittest1 unittest1.exe unittest2 unitest2.exe
+	rm -f *.o playdom.exe playdom player player.exe  *.gcov *.gcda *.gcno *.so *.out testDrawCard testDrawCard.exe testGetCost testGetCost.exe testFullDeckCount testFullDeckCount.exe testKingdomCards testKingdomCards.exe
