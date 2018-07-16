@@ -42,6 +42,9 @@ testFullDeckCount: unittest2.c dominion.o rngs.o
 testKingdomCards: unittest3.c dominion.o rngs.o
 	gcc -o testKingdomCards unittest3.c -g dominion.o rngs.o $(CFLAGS)
 
+testHandCard: unittest4.c dominion.o rngs.o
+	gcc -o testHandCard unittest4.c -g dominion.o rngs.o $(CFLAGS)
+
 
 all: playdom player 
 
