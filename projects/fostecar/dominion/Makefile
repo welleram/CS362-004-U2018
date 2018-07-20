@@ -54,8 +54,11 @@ testAdventurer: cardtest2.c dominion.o rngs.o
 testCutpurse: cardtest3.c dominion.o rngs.o
 	gcc -o testCutpurse -g cardtest3.c dominion.o rngs.o $(CFLAGS)
 
+testCouncilRoom: cardtest4.c dominion.o rngs.o
+	gcc -o testCouncilRoom -g cardtest4.c dominion.o rngs.o $(CFLAGS)
+
 
 all: playdom player 
 
 clean:
-	rm -f *.o playdom.exe playdom player player.exe  *.gcov *.gcda *.gcno *.so *.out testDrawCard testDrawCard.exe testGetCost testGetCost.exe testFullDeckCount testFullDeckCount.exe testKingdomCards testKingdomCards.exe testHandCard testHandCard.exe testSmithy testSmithy.exe testAdventurer testAdventurer.exe testCutpurse testCutpurse.exe
+	rm -f *.o playdom.exe playdom player player.exe  *.gcov *.gcda *.gcno *.so *.out testDrawCard testDrawCard.exe testGetCost testGetCost.exe testFullDeckCount testFullDeckCount.exe testKingdomCards testKingdomCards.exe testHandCard testHandCard.exe testSmithy testSmithy.exe testAdventurer testAdventurer.exe testCutpurse testCutpurse.exe testCouncilRoom testCouncilRoom.exe
