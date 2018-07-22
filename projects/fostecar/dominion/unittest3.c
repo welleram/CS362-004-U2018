@@ -25,6 +25,8 @@ int main() {
 
 	srand(time(0));
 
+	printf("\nBegin Test - dominion.c, kingdomCards() - unittest3.c\n");
+
 
 	/*Real Card Values*/
 	for (i = 0; i < 10; ++i) {
@@ -59,6 +61,8 @@ int main() {
 			printf("PASS : Returned Array Correct Pointer - Other Random Values\n");
 		}
 	}
+
+	printf("End Test - dominion.c, kingdomCards() - unittest3.c\n\n");
 
 	return 1;
 }

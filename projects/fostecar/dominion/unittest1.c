@@ -4,7 +4,7 @@
 * Updated makefile to include:
 *
 * testGetCost: unittest1.c dominion.o rngs.o
-* gcc -o testGetCost -g testGetCost.c dominion.o rngs.o $(CFLAGS)
+* gcc -o testGetCost -g unittest1.c dominion.o rngs.o $(CFLAGS)
 * -----------------------------------------------------------------------
 */
 #include "dominion.h"
@@ -25,7 +25,7 @@ int main() {
 	int outOfBounds = -5;
 	int max = 1000;
 
-	printf("Begin Test - dominion.c, getCost() - unittest1.c\n");
+	printf("\nBegin Test - dominion.c, getCost() - unittest1.c\n");
 
 
 	/*Cycle through card numbers and compare to known cost.*/
@@ -146,7 +146,7 @@ int main() {
 		}
 	}
 
-	printf("End Test - dominion.c, getCost() - unittest1.c\n");
+	printf("End Test - dominion.c, getCost() - unittest1.c\n\n");
 
 	return 1;
 }

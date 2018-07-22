@@ -24,6 +24,7 @@ int main() {
 	int player = -5;
 	int handPos = -5;
 	int i;
+	int j = -5;
 	int fxnRtn = -5;
 	int choice1 = -5;
 	int choice2 = -5;
@@ -70,11 +71,13 @@ int main() {
 		printf("FAIL : Hand Count incorrect after card played (should be 7, value is %d)\n", testGame.handCount[player]);
 	}
 	//Check: hand does not contain Smithy
+	j = 0;
 	for (i = 0; i < 7; ++i) {
 		if (testGame.hand[player][i] == smithy) {
 			printf("FAIL : Smithy found in hand at position %d\n", i);
+			j = 1;
 		}
-		else if (i == 6) {
+		else if ((i == 6) && (j != 1)) {
 			printf("PASS : Smithy NOT found in hand\n");
 		}
 	}
@@ -139,11 +142,13 @@ int main() {
 		printf("FAIL : Hand Count incorrect after card played (should be 7, value is %d)\n", testGame.handCount[player]);
 	}
 	//Check: hand does not contain Smithy
+	j = 0;
 	for (i = 0; i < 7; ++i) {
 		if (testGame.hand[player][i] == smithy) {
 			printf("FAIL : Smithy found in hand at position %d\n", i);
+			j = 1;
 		}
-		else if (i == 6) {
+		else if ((i == 6) && (j != 1)) {
 			printf("PASS : Smithy NOT found in hand\n");
 		}
 	}
@@ -212,20 +217,22 @@ int main() {
 		printf("FAIL : Hand Count incorrect after card played (should be 6, value is %d)\n", testGame.handCount[player]);
 	}
 	//Check: hand does not contain Smithy
+	j = 0;
 	for (i = 0; i < 7; ++i) {
 		if (testGame.hand[player][i] == smithy) {
 			printf("FAIL : Smithy found in hand at position %d\n", i);
+			j = 1;
 		}
-		else if (i == 6) {
+		else if ((i == 6) && (j != 1)) {
 			printf("PASS : Smithy NOT found in hand\n");
 		}
 	}
-	//Check: playedCardsCt = 4
-	if (testGame.playedCardCount == 4) {
-		printf("PASS : Played Card Count incremented to 4 is correct\n");
+	//Check: playedCardsCt = 1
+	if (testGame.playedCardCount == 1) {
+		printf("PASS : Played Card Count incremented to 1 is correct\n");
 	}
 	else {
-		printf("FAIL : Played Card Count is incorrect, value is %d, correct value is 4\n", testGame.playedCardCount);
+		printf("FAIL : Played Card Count is incorrect, value is %d, correct value is 1\n", testGame.playedCardCount);
 	}
 	//Check: played card last card is Smithy
 	if (testGame.playedCards[0] == smithy) {

@@ -60,7 +60,7 @@ int main() {
 	}
 
 
-	printf("Begin Test - dominion.c, fullDeckCount() - unittest2.c\n");
+	printf("\nBegin Test - dominion.c, fullDeckCount() - unittest2.c\n");
 
 	/*Check various cards in the deck only*/
 	card = rand() % 27;  //Select a card (0,26)
@@ -209,7 +209,7 @@ int main() {
 	printf("Behavior Check : Invalid Card (-1), return %d\n", cardCount);
 
 
-	printf("End Test - dominion.c, fullDeckCount() - unittest2.c\n");
+	printf("End Test - dominion.c, fullDeckCount() - unittest2.c\n\n");
 
 	return 1;
 }
