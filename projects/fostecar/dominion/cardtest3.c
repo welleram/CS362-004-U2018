@@ -98,7 +98,7 @@ int main() {
 		printf("PASS : Hand count for player%d is 4\n", playerX);
 	}
 	else {
-		printf("FAIL : Hand count for player%d is %d, correct value is 4\n", playerX, testGame.handCount[0]);
+		printf("FAIL : Hand count for player%d is %d, correct value is 4\n", playerX, testGame.handCount[playerX]);
 	}
 	//Check PlayerX has two coppers in their hand
 	j = 0;
@@ -120,7 +120,7 @@ int main() {
 		printf("PASS : Hand count for player%d is 5\n", playerY);
 	}
 	else {
-		printf("FAIL : Hand count for player%d is %d, correct value is 5\n", playerY, testGame.handCount[0]);
+		printf("FAIL : Hand count for player%d is %d, correct value is 5\n", playerY, testGame.handCount[playerY]);
 	}
 	//Check PlayerY has no copper in their hand
 	j = 0;
@@ -142,7 +142,7 @@ int main() {
 		printf("PASS : Hand count for player%d is 5\n", playerZ);
 	}
 	else {
-		printf("FAIL : Hand count for player%d is %d, correct value is 5\n", playerZ, testGame.handCount[0]);
+		printf("FAIL : Hand count for player%d is %d, correct value is 5\n", playerZ, testGame.handCount[playerZ]);
 	}
 	//Check PlayerZ has no copper in their hand
 	j = 0;
@@ -167,7 +167,7 @@ int main() {
 
 	printf("End Card Test - Cutpurse\n\n");
 
-	return 1;
+	return 0;
 
 }
 
