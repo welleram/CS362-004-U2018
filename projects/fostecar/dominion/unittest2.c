@@ -211,7 +211,7 @@ int main() {
 
 	printf("End Test - dominion.c, fullDeckCount() - unittest2.c\n\n");
 
-	return 1;
+	return 0;
 }
 /*
 struct gameState {

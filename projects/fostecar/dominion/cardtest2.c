@@ -684,7 +684,7 @@ int main() {
 
 	printf("End Card Test - Adventurer\n\n");
 
-	return 1;
+	return 0;
 }
 
 

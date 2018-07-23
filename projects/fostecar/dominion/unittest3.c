@@ -64,7 +64,7 @@ int main() {
 
 	printf("End Test - dominion.c, kingdomCards() - unittest3.c\n\n");
 
-	return 1;
+	return 0;
 }
 
 /*

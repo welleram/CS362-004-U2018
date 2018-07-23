@@ -222,5 +222,5 @@ int main() {
 
 	printf("End Card Test - Council Room\n\n");
 
-	return 1;
+	return 0;
 }

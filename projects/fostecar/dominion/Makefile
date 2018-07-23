@@ -73,42 +73,42 @@ unittestresults.out: unittest1.c unittest2.c unittest3.c unittest4.c cardtest1.c
 	echo "unittest1.c:" >> unittestresults.out
 	gcc -o testGetCost dominion.c rngs.c unittest1.c $(CFLAGS)
 	testGetCost >> unittestresults.out
-	gcov unittest1.c >> unittestresults.out
+	gcov unittest1.c -b >> unittestresults.out
 	
 	echo "unittest2.c:" >> unittestresults.out
 	gcc -o testFullDeckCount dominion.c rngs.c unittest2.c $(CFLAGS)
 	testFullDeckCount >> unittestresults.out
-	gcov unittest2.c >> unittestresults.out
+	gcov unittest2.c -b >> unittestresults.out
 	
 	echo "unittest3.c:" >> unittestresults.out
 	gcc -o testKingdomCards dominion.c rngs.c unittest3.c $(CFLAGS)
 	testKingdomCards >> unittestresults.out
-	gcov unittest3.c >> unittestresults.out
+	gcov unittest3.c -b >> unittestresults.out
 	
 	echo "unittest4.c:" >> unittestresults.out
 	gcc -o testHandCard dominion.c rngs.c unittest4.c $(CFLAGS)
 	testHandCard >> unittestresults.out
-	gcov unittest4.c >> unittestresults.out
+	gcov unittest4.c -b >> unittestresults.out
 	
 	echo "cardtest1.c:" >> unittestresults.out
 	gcc -o testSmithy dominion.c rngs.c cardtest1.c $(CFLAGS)
 	testSmithy >> unittestresults.out
-	gcov cardtest1.c >> unittestresults.out
+	gcov cardtest1.c -b >> unittestresults.out
 
 	echo "cardtest3.c:" >> unittestresults.out
 	gcc -o testCutpurse dominion.c rngs.c cardtest3.c $(CFLAGS)
 	testCutpurse >> unittestresults.out
-	gcov cardtest3.c >> unittestresults.out
+	gcov cardtest3.c -b >> unittestresults.out
 
 	echo "cardtest4.c:" >> unittestresults.out
 	gcc -o testCouncilRoom dominion.c rngs.c cardtest4.c $(CFLAGS)
 	testCouncilRoom >> unittestresults.out
-	gcov cardtest4.c >> unittestresults.out
+	gcov cardtest4.c -b >> unittestresults.out
 
 	echo "cardtest2.c:" >> unittestresults.out
 	gcc -o testAdventurer dominion.c rngs.c cardtest2.c $(CFLAGS)
 	testAdventurer >> unittestresults.out
-	gcov cardtest2.c >> unittestresults.out
+	gcov cardtest2.c -b >> unittestresults.out
 
 all: playdom player 
 

@@ -108,7 +108,7 @@ int main() {
 
 	printf("End Test - dominion.c, handCard() - unittest4.c\n\n");
 
-	return 1;
+	return 0;
 }
 
 /*
