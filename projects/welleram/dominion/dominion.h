@@ -127,5 +127,9 @@ int scoreFor(int player, struct gameState *state);
 int getWinners(int players[MAX_PLAYERS], struct gameState *state);
 /* Set array position of each player who won (remember ties!) to
    1, others to 0 */
+int playSmithy(struct gameState *state, int handPos);
+/*playSmithy will play the card smithy called in cardEffect */
 
+int playAdventurer(struct gameState *state);
+/*playBaron will play the card Baron called in cardEffect*/
 #endif
